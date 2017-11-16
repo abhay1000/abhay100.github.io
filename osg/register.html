@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+ <title>Online Shopping</title>
+ <link rel="stylesheet" type="text/css" href="index.css">
+ 
+</head>
+<body color="white">
+ <center>
+    <a href="index.html"><img width="120" src="../wtl/image/logo.jpg" alt="logo"></a>
+	    <table id="register">
+		  <form id="forms" onsubmit="ccheck()" action="register_page.php" method="post">
+		    <tr>
+			<td>Create Account</td>
+			</tr>
+			
+		    <tr>
+			<td>Your Name</td>
+			</tr>
+			
+			<tr>
+			<td><input required type="text" name="yname"></td>
+			</tr>
+			
+			<tr>
+			<td>Mobile Number</td>
+			</tr>
+			
+			<tr>
+			<td><input required type="tel" name="tel" maxlength="10"></td>
+			</tr>
+			
+			<tr>
+			<td>Email Address</td>
+			</tr>
+			
+			<tr>
+			<td><input required type="email" id="email" name="email"></td>
+			</tr>
+		
+			
+			<tr>
+			<td>Password</td>
+			</tr>
+			
+			<tr>
+			<td><input required type="password" id="pwd" name="password"></td>
+			</tr>
+			
+			<tr>
+			<td>RePassword</td>
+			</tr>
+			
+			<tr>
+			<td><input required onmouseenter="check()" onmouseleave="check()" type="password" id="rpwd" name="repassword"></td>
+			</tr>
+			
+			<tr>
+			<td id="demo"></td>
+			</tr>
+			
+			<tr>
+			<td><input id="submit" type="submit" value="Register"></td>
+			</tr>
+			
+			<tr>
+			<td>Already have an account?<a href="login.html">Login</a></td>
+			</tr>
+			<form>
+		</table>
+ </center>
+ <script language="javascript" type="text/javascript">
+ function check()
+ {
+  var i = document.getElementById("pwd").value;
+  var j = document.getElementById("rpwd").value;
+  if(i==j)
+  {
+     document.getElementById("demo").innerHTML = "";
+  
+  }
+  else
+  {
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").innerHTML = "Incorrect Password";
+  
+  
+  }
+ }
+ function ccheck()
+ {
+  var i = document.getElementById("pwd").value;
+  var j = document.getElementById("rpwd").value;
+  var f = document.getElementById("forms");
+  if(i==j)
+  {
+     document.getElementById("demo").innerHTML = "";
+  
+  }
+  else
+  {
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").innerHTML = "Incorrect Password";
+  alert("Form Incorrect");
+  f.action = "register.html";
+  
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+ </script>
+</body>
+</html>

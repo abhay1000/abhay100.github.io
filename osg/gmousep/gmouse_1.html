@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="mavicon.css">
+ </head>
+ 
+<body>
+
+
+<header>
+		<ul>
+		     <a href="../index.html"><img id="logo" src="../image/logo.jpg" alt="logo" /></a>
+			 <li><a href="../index.html">Home</a></li>
+			 <li><input type="search" name="search"><li>
+			 <li><img src="../image/icon.png" style="width:15px;" alt="search"/></li>
+			 <li>Cart</li>
+			 <a href="../login.html"><li>Login</li></a>
+			 <a href="../register.html"><li id="register">Register</li></a>
+		</ul>
+</header> 
+
+ 
+<div id="body_container">
+   <div id="container_1">
+    <div id="side_bar">
+	 <form action="query_add.php" method="post">
+       <li id="fixed"><img onclick="first()" onmouseover="first()" src="../gmouse/gmouse_1/side_bar_1.jpg" alt="side_bar_1"></button>
+	   <li id="fixed"><img onclick="second()" onmouseover="second()" src="../gmouse/gmouse_1/side_bar_2.jpg" alt="side_bar_2"></li>
+       <li id="fixed"><img onclick="third()" onmouseover="third()" src="../gmouse/gmouse_1/side_bar_3.jpg" alt="side_bar_3"></li>
+       <li id="fixed"><img onclick="fourth()" onmouseover="fourth()" src="../gmouse/gmouse_1/side_bar_4.jpg" alt="side_bar_4"></li>
+     </div>
+   </div>
+
+
+	<div id="container_2"> 
+	  <div id="image_stat">
+		<img id="none" src="../gmouse/gmouse_1/image_stat_1.jpg" width="300" height="400" alt="info">
+	  </div> 
+	</div>
+	
+	
+	<div id="container_3">
+	 <table id="content">
+	  <tr>
+	  <td><input type="text" style="font-family:Arial;font-size:25px;width:500px;" readonly name="product_description" value="Corsair Gaming M65 PRO RGB"></td>
+	  </tr>
+	  
+	  <tr>
+	  <td>Rs 4,000/-</td>
+	  </tr>
+	  
+	  
+	  <tr>
+	  <td style="color:green;">Cash on Delivery</td>
+	  <tr>
+	  
+	  <tr>
+	  <td>In Stock</td>
+	  </tr>
+	  
+	  <tr>
+	  <td>1733 Mhz boost Clock with Super alloy Power || Delivery</td>
+	  </tr>
+	  
+	  <tr>
+	  <td>Manufactured with auto-extreme automation technology for consistent, reliable performance</td>
+	  </tr>
+
+	  <tr>
+	  <td>Blower-cooled design with reference-sized Form Factor ideal for SLI configurations</td>
+	  </tr>
+	  
+	  
+	  
+	 </table>
+	</div>
+	
+    <div id="container_4">
+	 <table id="right_bar">
+	    <tr>
+        <td style="color: black;border:0px;">Product_Id:<input readonly type="text" value="#gms01" name="product_id"></td>
+        </tr>		
+	     
+		 
+	    <tr>
+		<td style="color:black;">Quantity:
+		 <select name="quantity">
+		   <option value="1">1</option>
+		   <option value="2">2</option>
+		  </select>
+		</td>
+		</tr>
+	    
+	    <tr>		
+	    <td><input style="background-color:#41caf4;border-color:red;" type="submit" id="right_bar" value="Add to Cart"></td>
+		</tr>
+		
+		<tr>
+	    <td><input type="submit" value="Buy Now"></td>
+		</tr>
+	    </form>
+	 </table>
+	 
+	 <hr>
+	 
+	 <table id="right_bar">
+	    <tr>
+		<td><button style="background-color:#dadee5;" id="right_bar">Add to Wish list</button></td>
+		</tr>
+	 </table>
+	 
+	</div>
+	
+</div>  
+
+ 
+<script language="javascript" type="text/javascript">
+ function first()
+ {
+  var i = document.getElementById("none");
+  i.src = "../gmouse/gmouse_1/image_stat_1.jpg";
+ 
+ }
+ function second()
+ {
+  var i = document.getElementById("none");
+  i.src = "../gmouse/gmouse_1/image_stat_2.jpg";
+ 
+ }
+ function third()
+ {
+   var i = document.getElementById("none");
+   i.src = "../gmouse/gmouse_1/image_stat_3.jpg";
+ 
+ }
+ function fourth()
+ {
+    var i = document.getElementById("none");
+    i.src = "../gmouse/gmouse_1/image_stat_4.jpg";
+ }
+ </script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+ 
+ 
+ 
+</html>
